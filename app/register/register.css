@@ -1,0 +1,60 @@
+.register-container{
+    width: 400px;
+  
+   
+ 
+    padding: 2.5rem;
+    align-items: center;
+    text-align: center;;
+
+    border-radius: 50px;
+background: #0055ff;
+box-shadow:  5px 5px 10px #003bb0,
+             -5px -5px 10px #006fff;
+
+
+             color: aliceblue;
+             font-family: cursive;
+             font-size: large;
+             font-weight: bold;
+}
+.register-container > input{
+    border-radius: 5px;
+    border: none;
+    outline:  none;
+ 
+    margin: 0.5rem 0.75rem;
+    padding: 0.5rem 0.75rem;
+    width: 90%;
+    font-size: 1rem;
+    
+
+}
+.register-container > .button {
+    background: #0085ff; 
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 1.25rem;
+    border: none;
+    margin:  0.5rem 0;
+    padding: 0.5rem;
+    outline: none;
+    cursor: pointer;
+
+}
+a{
+    width: 400px;
+  
+   
+ 
+    padding: 2.5rem;
+    align-items: center;
+    text-align: center;;
+
+
+
+             color: aliceblue;
+             font-family: cursive;
+             font-size: large;
+             font-weight: bold;
+}
