@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 // Manually set the MongoDB URI
-const MONGO_URI = "mongodb://localhost:27017/login-register";
+// const MONGO_URI = "mongodb://localhost:27017/login-register";
 
 let cached = global.mongoose;
 
@@ -21,7 +21,7 @@ const connectDb = async () => {
       bufferCommands: false,
     };
 
-    cached.promise = mongoose.connect(MONGO_URI, opts).then((mongoose) => {
+    cached.promise = mongoose.connect(process.env.MONGO_URI, opts).then((mongoose) => {
       return mongoose;
     });
   }
