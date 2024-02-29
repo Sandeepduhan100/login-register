@@ -21,6 +21,7 @@ function Login() {
   };
 
   const handleLogin = async () => {
+
     try {
       // Client-side validation
       if (!user.email || !user.password) {
@@ -31,7 +32,7 @@ function Login() {
       setError(''); // Clear any previous error messages
 
       // Check if the email exists in the MongoDB database
-      const checkResponse = await fetch('http://localhost:3000/api/checkemail', {
+      const checkResponse = await fetch(`${process.env.NEXT_PUBLIC_LOCALHOST}/api/checkemail`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

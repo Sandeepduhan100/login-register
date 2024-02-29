@@ -39,7 +39,7 @@ function Register() {
 
       setError(''); // Clear any previous error messages
 
-      const response = await fetch('http://localhost:3000/api/reslog', {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_LOCALHOST}/api/reslog`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(user),
